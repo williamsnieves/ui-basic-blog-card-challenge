@@ -29,6 +29,34 @@ All components receive their typed props from `BlogCard.types.ts`.
 
 You can modify the card content by editing the `BLOG_CARD_DATA` object in `src/components/BlogCard.tsx`.
 
+## Deployment
+
+To deploy this project to GitHub Pages:
+
+1. Install the `gh-pages` package as a dev dependency:
+   ```sh
+   pnpm add -D gh-pages
+   ```
+2. Add the following scripts to your `package.json`:
+   ```json
+   "predeploy": "pnpm run build",
+   "deploy": "gh-pages -d dist"
+   ```
+3. Set the `base` option in your `vite.config.ts` to your repository name:
+   ```ts
+   // vite.config.ts
+   export default defineConfig({
+     // ...existing code...
+     base: '/blog-card-challenge/',
+   });
+   ```
+4. Build and deploy:
+   ```sh
+   pnpm run deploy
+   ```
+
+Your site will be published at `https://<your-github-username>.github.io/blog-card-challenge/`.
+
 ---
 
 Project built with React, TypeScript, and TailwindCSS.
