@@ -1,54 +1,34 @@
-# React + TypeScript + Vite
+# Blog Card Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements a blog card using React and TypeScript best practices, with small, reusable components.
 
-Currently, two official plugins are available:
+## Component Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `BlogCard`: Main component that composes the card using subcomponents.
+- `BlogCardImage`: Displays the main article image.
+- `BlogCardCategory`: Displays the article category.
+- `BlogCardMeta`: Displays the publication date.
+- `BlogCardTitle`: Displays the article title.
+- `BlogCardDescription`: Displays the article description.
+- `BlogCardAuthor`: Displays the author information (name and avatar).
 
-## Expanding the ESLint configuration
+All components receive their typed props from `BlogCard.types.ts`.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Installation & Usage
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Install dependencies:
+   ```sh
+   pnpm install
+   ```
+2. Start the development server:
+   ```sh
+   pnpm dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Customization
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+You can modify the card content by editing the `BLOG_CARD_DATA` object in `src/components/BlogCard.tsx`.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+Project built with React, TypeScript, and TailwindCSS.
