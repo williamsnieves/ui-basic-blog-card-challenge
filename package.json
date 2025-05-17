@@ -17,7 +17,7 @@
     "react-dom": "^19.1.0",
     "tailwindcss": "^4.1.7"
   },
-  "homepage": "https://williamsnieves.github.io/blog-card-challenge/",
+  "homepage": "https://williamsnieves.github.io/ui-basic-blog-card-challenge/",
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",

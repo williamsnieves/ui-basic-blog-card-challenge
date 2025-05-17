@@ -47,7 +47,7 @@ To deploy this project to GitHub Pages:
    // vite.config.ts
    export default defineConfig({
      // ...existing code...
-     base: '/blog-card-challenge/',
+     base: '/ui-basic-blog-card-challenge/',
    });
    ```
 4. Build and deploy:
@@ -55,7 +55,7 @@ To deploy this project to GitHub Pages:
    pnpm run deploy
    ```
 
-Your site will be published at `https://<your-github-username>.github.io/blog-card-challenge/`.
+Your site will be published at `https://<your-github-username>.github.io/ui-basic-blog-card-challenge/`.
 
 ---
 
