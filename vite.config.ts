@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/blog-card-challenge/",
   plugins: [react(), tailwindcss()],
-  base: '/blog-card-challenge/', // Set this to your repo name for GitHub Pages
 });
