@@ -59,4 +59,4 @@ Your site will be published at `https://<your-github-username>.github.io/blog-ca
 
 ---
 
-Project built with React, TypeScript, and TailwindCSS.
+Project built with React, TypeScript and TailwindCSS.
